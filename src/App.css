@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.box-container {
+  padding-bottom: 20rem;
+
+}
+
+.box {
+  width: 25rem;
+  height: 25rem;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  padding: 2rem;
+}
