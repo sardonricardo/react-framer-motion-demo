@@ -22,3 +22,12 @@
 .app {
   padding: 2rem;
 }
+
+.boxItem {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  margin: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
