@@ -8,13 +8,39 @@ export default function Box5 () {
 
     return (
         <div className="box-container">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button onClick={() => {
+                control.start({
+                    x: 400,
+                    transition: { duration: 2 }
+                })
+            }}>Move Right</button>
+            <button onClick={() => {
+                control.start({
+                    x: 0,
+                    transition: { duration: 2 }
+                })
+            }}>Move Left</button>
+            <button onClick={() => {
+                control.start({
+                    borderRadius: "50%",
+                    transition: { duration: 1 }
+                })
+            }}>Circle</button>
+            <button onClick={() => {
+                control.start({
+                    borderRadius: 0,
+                    transition: { duration: 1 }
+                })
+            }}>Square</button>
+            <button onClick={() => {
+                control.stop({
+                    x: 0,
+                    transition: { duration: 1 }
+                })
+            }}>Stop</button>
             <motion.div //calling framer method "motion"
             className="box"
+            animate={control}
 
             >
 

@@ -31,3 +31,14 @@
   text-decoration: none;
   list-style: none;
 }
+
+button {
+  background-color: tomato;
+  color: white;
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  border-radius: 20px;
+  margin: 2rem;
+
+}
